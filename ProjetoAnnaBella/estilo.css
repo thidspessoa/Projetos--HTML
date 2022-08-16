@@ -1,0 +1,58 @@
+.EscopoPrincipal {
+	background-image: url('fundo.png');
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+	'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}	
+
+.MenudeAcesso {
+	background-color: #8B8C64;
+	width: 1200px;
+}
+
+.NavBar {
+	margin-left: 20px;
+	font-weight: 900;
+	color: #222C40;
+}
+
+#Titulo {
+	color: #8B8C64;
+	font-weight: 900;
+	margin-left: 1em;
+}
+
+.Sobre {
+	background-color: #F2EFDF;
+	color: black;
+	font-size: 10;
+	width: 1200px;
+}
+
+p {
+	margin-left: 1em;
+	margin-right: 1em;
+	
+}
+
+#Titulo {
+	color: #8B8C64;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+
+.Rodape {
+	margin-left:30em;
+	font-weight: 900;
+}
+
+/*Campanhas Publicitarias*/
+
+.Imagens {
+	border: 8px solid #D9C99A;
+	margin-left: 2em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
