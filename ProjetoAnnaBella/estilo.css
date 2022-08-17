@@ -11,8 +11,8 @@
 
 .NavBar {
 	margin-left: 20px;
-	font-weight: 900;
-	color: #222C40;
+	font-weight: bolder;
+	color: black;
 }
 
 #Titulo {
@@ -55,4 +55,6 @@ p {
 	margin-bottom: 10px;
 }
 
-
+i {
+	
+}
