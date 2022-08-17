@@ -33,7 +33,7 @@ i {
 	font-weight: 900;
 	margin-left: 1em;
 	font-size: 20px;
-	text-align: center;
+
 }
 
 .Sobre {
@@ -47,14 +47,14 @@ i {
 
 p {
 	padding: 1em;
-	text-align: center;	
+	
 }
 
 
 .Rodape {
-	padding-left:30em;
-	padding-top: 10px;
+	text-align: center;
 	font-weight: 900;
+	width: 1200px;
 }
 
 /*Campanhas Publicitarias*/
