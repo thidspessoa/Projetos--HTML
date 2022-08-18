@@ -1,5 +1,5 @@
 .EscopoPrincipal {
-	background: #d2d2c1; background-image: url('fundo.png');
+	background: #d2d2c1; background-image: url('Assets/fundo.png');
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 	'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }	
@@ -32,7 +32,7 @@ i {
 	color: #8B8C64;
 	font-weight: 900;
 	margin-left: 1em;
-	font-size: 20px;
+	font-size: 16px;
 
 }
 
@@ -51,10 +51,11 @@ p {
 }
 
 
-.Rodape {
+#Rodape {
 	text-align: center;
 	font-weight: 900;
 	width: 1200px;
+	margin-top: 10px;
 }
 
 /*Campanhas Publicitarias*/
