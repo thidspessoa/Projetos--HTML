@@ -37,14 +37,6 @@ body {
     position: absolute;
 }
 
-#menusLaterais {
-    width: 240px;
-    float: right;
-    position: absolute;
-    top: 11em;
-    right: 9em;
-}
-
 .Postagem {
     background-color: #FFF;
     margin-bottom: 20px;
@@ -52,11 +44,26 @@ body {
     /*border: 1px red solid;*/
 }
 
+#menusLaterais {
+    width: 240px;
+    float: right;
+    position: absolute;
+    top: 10em;
+    right: 29em;
+}
+
 .conteudoLateral {
     background-color: #FFF;
     padding: 3px;
     margin-bottom: 20px;
 }
+
+.postagemLateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+
 
 #rodaPe {
     clear: both;
@@ -85,6 +92,7 @@ a {
 #areaCabeçalho a:hover {
     background-color: #FFF;
     color: #f7b600;
+    text-decoration: none;
 }
 
  a:link,  a:visited {
