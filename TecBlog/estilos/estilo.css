@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-size: 1em;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -15,10 +16,11 @@ body {
 #areaCabeçalho {
     background-color: #f7b600;
     padding: 15px;
-    text-align: center; 
+    text-align: center;
 }
 
-#areaLogo, #areaNavBar {
+#areaLogo,
+#areaNavBar {
     padding: 10px;
 }
 
@@ -29,30 +31,42 @@ body {
 }
 
 #areaPostagens {
-    width: 680px;
+    width: 660px;
     float: left;
     padding: 20px;
+    position: absolute;
 }
 
 #menusLaterais {
     width: 240px;
-    
+    float: right;
+    position: absolute;
+    top: 11em;
+    right: 9em;
 }
 
 .Postagem {
     background-color: #FFF;
     margin-bottom: 20px;
-    padding: 20px; 
-    border: 1px red solid;
+    padding: 20px;
+    /*border: 1px red solid;*/
 }
 
 .conteudoLateral {
     background-color: #FFF;
-    padding: 10px;
+    padding: 3px;
     margin-bottom: 20px;
 }
 
-
+#rodaPe {
+    clear: both;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: #D1CFCB;
+    text-align: center;
+    position: relative;
+    top: 83em;
+}
 
 /*
 **** Formatação do menu ****
@@ -63,28 +77,53 @@ a {
     padding: 10px;
 }
 
-a:link, a:visited {
+#areaCabeçalho a:link, #areaCabeçalho a:visited {
     color: white;
     padding: 8px 12px;
 }
-a:hover {
+
+#areaCabeçalho a:hover {
     background-color: #FFF;
     color: #f7b600;
+}
+
+ a:link,  a:visited {
+    color: #f7b600;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /*
 **** Formatações em geral ****
 */
 
-h1 {
+h1, {
     color: #4e4e4e;
     font-size: 2.5em;
 }
 
-hr {
-    width: 618px;
+h2 {
+    color: #f7b600;
 }
+
+h3 {
+    color: #474745;
+    background-color: #D1CFCB;
+    padding: 5px;
+    margin: 3px;
+}
+
 
 .branco {
     color: white;
+}
+
+.dataPostagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
