@@ -1,0 +1,110 @@
+/*Limpar formatações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(/Noticias-cidade/Assets/fundo.png) repeat-x;
+}
+
+/*****************/
+
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+/** Cabeçalho **/
+
+#topo {
+    border: 1px solid red;
+    padding-top: 25px;
+    height: 150px;
+    background: url(/Noticias-cidade/Assets/detalhe-topo.png) no-repeat right top;
+}
+
+#cabeçalho {
+    
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(/Noticias-cidade/Assets/logo.png) no-repeat center;
+    /* Porque utilizar um h1 para inserir o log?
+    Essa estrategia é uma questão de acessibilidade, 
+    pois caso você defina uma imagem diretamente no html, leitores
+    de tela, não irão ler sua imagem. E caso também seu css não seja
+    carregado, você tera um conteudo para exibir.*/
+
+
+    text-indent: -3000px;
+    /* Para ocutar as palavras que sobrepoem a logo, você poderia utilizar
+    um display none, mas essa não seria uma solução eficaz, pois, os motores
+    dos sistemas de busca, como google e bing, podem se questionar
+    o porque de você estar escondendo conteudos dos usuarios. 
+    Esconder conteudos nunca é uma boa pratica.*/
+}
+
+
+
+/*** NAVEGAÇÃO ***/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#topo ul {
+    /* Seletor descentendete, pois temos mais de uma
+    ul no site, então precisamos referenciar em qual delas
+    vamos aplicar formatações.*/
+
+    background: #b10333;
+    margin-top: 30px;
+    float: left;
+    /*para que o background não se perca
+    em um fluxo diferente do li*/
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    padding: 0.5em 1.5em;
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    line-height: 2.1em;
+    color: #fff;
+    background: url(/Noticias-cidade/Assets/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69101d;
+}
+
+body.home #navegação a#home,
+body.Brasil #navegação a#Brasil,
+body.Internacional #navegação a#Internacional,
+body.Economia #navegação a#Economia,
+body.saude #navegação a#Saúde,
+body.ciencia #navegação a#Ciencia,
+body.fotos #navegação a#Fotos {
+    /* Selecionamos a classe home aplicada ao body,
+    apos isso selecionamos o id navegação*/
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
