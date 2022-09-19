@@ -12,23 +12,87 @@
     </head>
 
     <body class="home">
-
+       
+        <!--Inicio container-->
         <div id="container">
 
+            <!--Inicio toop-->
             <div id="topo">
                 <h1 class="logo">Noticias cidade</h1>
                 <ul id="navegação">
                     <li class="primeiro"><a id="home" href="index.html">Home</a></li>
-                    <li><a a id="Brasil" href="#">Brasil</a></li>
+                    <li><a a id="Brasil" href="Brasil.html">Brasil</a></li>
                     <li><a a id="Internacional" href="#">Internacional</a></li>
                     <li><a a id="Economia" href="#">Economia</a></li>
                     <li><a a id="Saúde" href="#">Saúde</a></li>
                     <li><a a id="Ciência" href="#">Ciência</a></li>
-                    <li><a a id="Fotos" href="#">Fotos</a></li>
+                    <li><a a id="Fotos" href="Fotos.html">Fotos</a></li>
                 </ul>
+            </div> <!--Fim /topo-->
+
+            <div id="conteudo"> <!-- Inicio Conteudo -->
+
+                <!--Os conteudos seguem essa ordem
+                por uma questão de acessibilidade. 
+                Pois os leitores de tela irão ler na ordem
+                certa, os conteudos do seu site.-->
+                <div id="primario"> <!-- Iinicio Primario -->
+
+                    <div class="caixa">
+                        <h2>Entrevistas</h2>
+                        <div id="caixa-conteudo">
+                            Conteúdo
+                        </div>
+                    </div>
+
+                </div> <!-- Final /Primario -->
+                
+                <div id="secundario"> <!-- Inicio Secundario -->
+
+                    <div class="caixa">
+                        <h2>Entrevistas</h2>
+                        <div id="caixa-conteudo">
+                            Conteudo
+                        </div>
+                    </div>
+
+                </div> <!-- Final /Secundario -->
+                
+                <!-- Inicio lateral -->
+                <div id="lateral">
+                    
+                    <div class="caixa">
+                        <h2>Entrevistas</h2>
+                        <div id="caixa-conteudo">
+                            <ul>
+                                <li><a href="#">João Almeida</a></li>
+                                <li><a href="#">Ana Jilment</a></li>
+                                <li><a href="#">Sebastian Pereira</a></li>
+                                <li><a href="#">Polly Pocket</a></li>
+                                <li><a href="#">Barbie Girl</a></li>
+                                <li><a href="#">Anderson Silva</a></li>
+                                <li><a href="#">Marcos Henrique</a></li>
+                                <li><a href="#">Jonas Manoel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div><!-- Fim /lateral -->
+
+            </div><!-- Fim /Conteudo -->
+
+        </div><!--Fim /container-->
+        
+        <div id="container-rodape" style="clear: both;">
+            <div id="rodape">
+                <!--HTML-ENTIES: Serve justamente
+                para inserirmos caracteres reservados,
+                caracteres invisiveis (como espaço sem quebra).
+                que se fossem utilizados de outra maneira
+                seriam interpretados como codigo HTML e não
+                como texto.-->
+                &copy; Copyright 2000-2018 Notícias cidade
             </div>
-
-
         </div>
  
     </body>

@@ -1,4 +1,4 @@
-/*Limpar formatações padrão*/
+/***************Limpar formatações padrão*************/
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-/** Cabeçalho **/
+/**************** Cabeçalho *****************/
 
 #topo {
     border: 1px solid red;
@@ -53,7 +53,7 @@ body {
 
 
 
-/*** NAVEGAÇÃO ***/
+/*********** NAVEGAÇÃO ************/
 
 ul {
     margin: 0;
@@ -107,4 +107,126 @@ body.fotos #navegação a#Fotos {
     color: #fff;
     background: #de003e;
     cursor: text;
+}
+
+/************ Configurar layout de três colunas ************/
+#conteudo {
+    /* Para tirar os conteudos de dentro do topo da pagina. */
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+    /* Sabemos que o nosso container tem 750px
+    E queremos colocar a barra lateral na lateral esquerda, 
+    colada ao lado do container. Então colocamos uma margin com
+    o valor do container, para poder colar a navegação lateral
+    aonde queremos. */
+}
+
+
+
+/* Divir cada coluna com tamanhos proporcionais ao total
+que definimos em container (750px), a medida que 
+a largura de todas as colunas somadas, deem um valor que ainda
+sobre alguns pixels (cerca de 20/30px) 
+para os espaçamentos laterais. */
+
+#primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+        /* Essa margin final, foi definida
+    para que o conteudo primario desse espaço
+    para o conteudo lateral se encaixar a esquerda do site.
+    E também já foi contando com o espaçamento lateral de 15px
+    pois no espaçamento de cada conteudo definimos um valor
+    que ao somados, sobre 30px do valor total do container geral.
+    Ou seja, esses 30px ficam para espaçamento lateral entre as colunas
+    e como temos 3 colunas, preciamos de dois espaçamentos. (cada um de 15px)
+    */
+}
+
+
+#duas-colunas #primario {
+    width: 555px;
+    /* 555+15px(espaçamento)+180px(nav.lateral)=750px */
+}
+
+#uma-colunas #primario {
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+    /* Para posicionar esse menu, temos de 
+    aplicar apenas a distancia lateral que deixamos 
+    no container, pois o conteudo secundario já esta em seu 
+    respectivo lado desejado, falta apenas a distancia entre
+    os demais layouts.*/
+}
+
+/************* CAIXA ******************/
+.caixa {
+    margin: 10px 0;
+    padding: 5px;
+    /*Esse espaçamento é importante para quando estivermos
+    trabalhando com outras caixas. Pois elas tem um espaçamento
+    entre elas.*/
+    background: #f3f3f3 url(../Assets/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.caixa-conteudo { 
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
+/********* Formatar menus laterais **********/
+#lateral ul a {
+    font-size: 0.9;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    color: #a1a1a1;
+}
+
+
+
+
+
+/******************* RODA-PE *************/
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto ;
+    color: #fff;
+    text-align: center;
 }
