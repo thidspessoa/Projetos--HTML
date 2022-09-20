@@ -11,13 +11,9 @@
 
     </head>
 
-    <body id="duas-colunas" class="Brasil" >
-         <!--Inserimos esse id, pois o conteudo primario
-        dependendo da pagina que estiver pode ter um tamanho
-        diferente, por isso precisamos criar um estado que queremos
-        cada conteudo seja exibido em uma determinada pagina.-->
-        <!--Inicio container-->
+    <body id="duas-colunas" class="Brasil">
        
+        <!--Inicio container-->
         <div id="container">
 
             <!--Inicio toop-->
@@ -26,7 +22,7 @@
                 <ul id="navegação">
                     <li class="primeiro"><a id="home" href="index.html">Home</a></li>
                     <li><a a id="Brasil" href="Brasil.html">Brasil</a></li>
-                    <li><a a id="Internacional" href="">Internacional</a></li>
+                    <li><a a id="Internacional" href="#">Internacional</a></li>
                     <li><a a id="Economia" href="#">Economia</a></li>
                     <li><a a id="Saúde" href="#">Saúde</a></li>
                     <li><a a id="Ciência" href="#">Ciência</a></li>
@@ -42,23 +38,110 @@
                 certa, os conteudos do seu site.-->
                 <div id="primario"> <!-- Iinicio Primario -->
 
-                    <div class="caixa">
-                        <h2>Entrevistas</h2>
+                    <div class="caixa destaque"> <!--Inicio cx. destaques -->
+                       
+                        <h2>Destaque</h2>
                         <div id="caixa-conteudo">
-                            Conteúdo
+                           
+                            <h3>Confira a data final para renovação do CNH</h3>
+                            <img class="imagem-principal" src="/Noticias-cidade/Assets/taxi.jpg"
+                            width="100%"> 
+                            <!-- O Problema de usar uma imagem
+                            grande e reduzir seu tamanho com CSS, é porque seu tamanho
+                            pode diminuir, mas seu tamanho de carregamento (kb), continua
+                            o mesmo.-->
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <a href="#">Leia mais</a>
                         </div>
-                    </div>
+                    
+                    </div> <!--Fim cx. /destaques-->
+
+                    <div class="caixa"> <!--Inicio cx. mundo-->
+                        <h2>Ultimas horas</h2>
+                        <div id="caixa-conteudo">
+                           
+                            <ul id="listas-noticias">
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/tecnologia.jpg"
+                                        width="80">
+                                        <h3>Angelina julie revela descaso na globo</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/tecnologia.jpg"
+                                        width="80">
+                                        <h3>As piores cidades para se morar</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/tecnologia.jpg"
+                                        width="80">
+                                        <h3>Novo carro poupular chega ao brasil</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/tecnologia.jpg"
+                                        width="80">
+                                        <h3>a 1 mes do enem</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                    </div> <!--Fim cx. /mundo-->
 
                 </div> <!-- Final /Primario -->
-                
                 
                 <!-- Inicio lateral -->
                 <div id="lateral">
                     
-                    <div class="caixa">
+                    <div class="caixa"> <!--Inicio cx. entrevistas-->
+                        
                         <h2>Entrevistas</h2>
                         <div id="caixa-conteudo">
-                            Conteúdo
+                            <ul>
+                                <li><a href="#">João Almeida</a></li>
+                                <li><a href="#">Ana Jilment</a></li>
+                                <li><a href="#">Sebastian Pereira</a></li>
+                                <li><a href="#">Polly Pocket</a></li>
+                                <li><a href="#">Barbie Girl</a></li>
+                                <li><a href="#">Anderson Silva</a></li>
+                                <li><a href="#">Marcos Henrique</a></li>
+                                <li><a href="#">Jonas Manoel</a></li>
+                            </ul>
+                        </div>
+                    
+                    </div> <!--Final cx. /entrevistas -->
+
+                    <div class="caixa">
+                        <h2>News</h2>
+                        <div id="caixa-conteudo">
+                            <form>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="text" name="email"
+                                    id="email" placeholder="Digite seu email...">
+                                </div>
+                                <div>
+                                    <input class="submit" type="submit" name="Cadastrar"
+                                    value="Cadastrar">
+                                </div>
+                            </form>
                         </div>
                     </div>
 

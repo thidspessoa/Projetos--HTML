@@ -2,7 +2,7 @@
 <html lang="pt-br">
     
     <head>
-        <title> Notícias cidade - Brasil </title>
+        <title> Notícias cidade - Fotos </title>
         <meta charset="utf-8">
 
         <!--Estilo customizado -->
@@ -11,16 +11,12 @@
 
     </head>
 
-    <body id="uma-colunas" class="fotos" >
-         <!--Inserimos esse id, pois o conteudo primario
-        dependendo da pagina que estiver pode ter um tamanho
-        diferente, por isso precisamos criar um estado que queremos
-        cada conteudo seja exibido em uma determinada pagina.-->
-        <!--Inicio container-->
+    <body id="uma-colunas" class="Fotos">
        
+        <!--Inicio container-->
         <div id="container">
 
-            <!--Inicio toop-->
+            <!--Inicio topo-->
             <div id="topo">
                 <h1 class="logo">Noticias cidade</h1>
                 <ul id="navegação">
@@ -42,14 +38,72 @@
                 certa, os conteudos do seu site.-->
                 <div id="primario"> <!-- Iinicio Primario -->
 
-                    <div class="caixa">
-                        <h2>Entrevistas</h2>
+                    <div class="caixa destaque"> <!--Inicio cx. destaques -->
+                       
+                        <h2>Destaque</h2>
                         <div id="caixa-conteudo">
-                            Conteúdo
+                           
+                            <h3>Ponte Rio Niteroi</h3>
+                            <img class="imagem-principal" src="/Noticias-cidade/Assets/cidade.jpg"
+                            width="100%"> 
+                            <!-- O Problema de usar uma imagem
+                            grande e reduzir seu tamanho com CSS, é porque seu tamanho
+                            pode diminuir, mas seu tamanho de carregamento (kb), continua
+                            o mesmo.-->
+                            <p>
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                            </p>
+                            <a href="#">Leia mais</a>
                         </div>
-                    </div>
+                    
+                    </div> <!--Fim cx. /destaques-->
 
-                </div> <!-- Final /Primario -->
+                    <div class="caixa"> <!--Inicio cx. mundo-->
+                        <h2>Pelo mundo</h2>
+                        <div id="caixa-conteudo">
+                           
+                            <ul id="listas-noticias">
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/mundo.jpg"
+                                        width="80">
+                                        <h3>As capitais mais visitadas do mundo</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/mundo.jpg"
+                                        width="80">
+                                        <h3>Principais Pontos turisticos - Chicago </h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/mundo.jpg"
+                                        width="80">
+                                        <h3>Novas tecnologias 5G chegam ao brasil</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/Noticias-cidade/Assets/taxi.jpg"
+                                        width="80">
+                                        <h3>Poluição nas grandes metropoles</h3>
+                                        <p>Lorem ipsum dolor sit
+                                        amet, consectetur...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                    </div> <!--Fim cx. /mundo-->
 
             </div><!-- Fim /Conteudo -->
 
