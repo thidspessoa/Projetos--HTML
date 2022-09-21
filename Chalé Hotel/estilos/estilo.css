@@ -1,0 +1,129 @@
+/***************Limpar formatações padrão*************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #fff url(../Assets/bg.png);
+    margin: 15px;
+}
+
+/*****************/
+
+#container {
+    background: #ede9cc;
+    margin: 0 auto;
+    /* Desta maneira o nosso container 
+    ficara centralizado*/
+    min-width: 740px;
+    max-width: 1180px;
+}
+
+#topo {
+    position: relative;
+    background: #dbcd87;
+    height: 15.4em;
+    /* Vamos utilizar unidade EM, pois
+    queremos que automaticamente, caso
+    aumente o tamanho do texto, nos queremos
+    que essa altura seja proporcional ao
+    tamanho do texto. */
+    min-height: 250px;
+    /* Para que o topo não tenha uma altura muito
+    pequena, supondo que os textos tenham uma altura
+    muito pequena, eu não quero que ele tenha uma altura 
+    muito pequena */
+}
+
+#areaLogo {
+    position: absolute;
+    /* Definimos esssas posições nos três
+    elementos pois dessa forma conseguimos sobrepor
+    essas duas areas, colocando area de menu no canto
+    direito sobrepondo esse canto da area de logo.*/
+    background: url(../Assets/topo-imagem-principal2.png) no-repeat;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    /* Com esses valores, a area de logo
+    irá ficar colada no espaço do topo do site.*/
+    z-index: 1;
+}
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    /* Para posicionar exatamente na area 
+    que gostariamos.*/
+    z-index: 3;
+    background: url(../Assets/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    /* Altura e largura normal da imagem.*/
+    text-indent: -9000px;
+    /* Para tirar o texto de acessibilidade
+    da tela (necessário para leitores de tela).*/
+}
+
+#areaMenu {
+    position: absolute;
+    background: url(../Assets/topo-imagem-lateral.png) no-repeat ;
+    width: 450px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /* Com esses valores, a area de menus
+    irá ficar colada no espaço do topo direito do site,
+    ou seja, em seu local desejado.*/
+}
+
+#conteudoMenu {
+    margin-left: 90px ;
+    /* Isso tira o conteudo de cima
+    da imagem de banner do site, pois a imagem da area
+    lateral tem uma parte invisivel.*/
+    margin-right: 15px;
+    /* Padrão que estamos usando de margin.*/
+    padding-top: 15px;
+}
+
+#menuLocais {
+    border-bottom: 1px solid #b5ab56 ;
+    border-top: 1px solid #b5ab56 ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    color: #8b8448;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menuLocais a:link,
+a:visited {
+    color: #8b8448;
+}
+
+#menuLocais a {
+    float: left;
+    line-height: 2.1em;
+    padding: 2px;
+}
+
+#areaMenu .botaoMenu {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+    line-height: normal;
+}
+
+
+

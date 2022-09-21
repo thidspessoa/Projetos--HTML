@@ -6,7 +6,7 @@
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #fff url(/Noticias-cidade/Assets/fundo.png) repeat-x;
+    background: #fff url(../Assets/fundo.png) repeat-x;
 }
 
 /*****************/
@@ -20,10 +20,9 @@ body {
 /**************** Cabeçalho *****************/
 
 #topo {
-    border: 1px solid red;
     padding-top: 25px;
     height: 150px;
-    background: url(/Noticias-cidade/Assets/detalhe-topo.png) no-repeat right top;
+    background: url(../Assets/detalhe-topo.png) no-repeat right top;
 }
 
 #cabeçalho {
@@ -35,7 +34,7 @@ body {
 .logo {
     width: 152px;
     height: 66px;
-    background: url(/Noticias-cidade/Assets/logo.png) no-repeat center;
+    background: url(../Assets/logo.png) no-repeat center;
     /* Porque utilizar um h1 para inserir o log?
     Essa estrategia é uma questão de acessibilidade, 
     pois caso você defina uma imagem diretamente no html, leitores
@@ -92,7 +91,7 @@ ul {
     text-decoration: none;
     line-height: 2.1em;
     color: #fff;
-    background: url(/Noticias-cidade/Assets/divisor.png) no-repeat left center;
+    background: url(../Assets/divisor.png) no-repeat left center;
 }
 
 #topo ul .primeiro a {
@@ -137,7 +136,7 @@ body.fotos #navegação a#Fotos {
 }
 
 #lateral ul a:hover {
-    background: #f9f9f9 url(/Noticias-cidade/Assets/marcador.png) no-repeat left center;
+    background: #f9f9f9 url(../Assets/marcador.png) no-repeat left center;
     padding-left: 20px;
     /* Faz o efeito de afastamento quando passamos o mouse por cima.*/
     color: #a1a1a1;
