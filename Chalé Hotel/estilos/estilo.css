@@ -13,7 +13,12 @@ body {
 /*****************/
 
 #container {
-    background: #ede9cc;
+    /* Criamos uma coluna falsa com essa imagem, dando
+    a impresão que as areas de conteudo no corpo do site
+    tem uma cor de fundo cada, mas na verdade é apenas
+    uma imagem. Mas é preciso limpar o fluxo flutuante
+    do conteudo. Colocamos pra repetir na Vertical.*/
+    background: #ede9cc url(../Assets/bg-container.png) top center repeat-y;
     margin: 0 auto;
     /* Desta maneira o nosso container 
     ficara centralizado*/
@@ -49,7 +54,7 @@ body {
     top: 0;
     left: 0;
     /* Com esses valores, a area de logo
-    irá ficar colada no espaço do topo do site.*/
+    irá ficar colada no 6e672cespaço do topo do site.*/
     z-index: 1;
 }
 
@@ -156,4 +161,95 @@ ul#Navegacao {
     /* Largura padrão da imagem*/
     height: 164px;
     float: right;
+}
+
+
+/********************* Área de conteúdos **********************/
+
+#areaPrincipal {
+    float: left;
+    width: 50%;
+    /* Como nossa pagina é feita em layout liquido
+    definimos a largura em porcentagem.*/
+    background: url(../Assets/bg-area-principal.png)top left repeat-x;
+    /* Linha com padrões para simular uma sepração entre a imagem de conteudos e
+    o topo. Ela irá repetir para a horizontal */
+    padding: 15px 0px;
+}
+
+#areaLateral {
+    float: right;
+    width: 50%;
+    background: url(../Assets/bg-area-lateral.png)top left repeat-x;
+    padding: 20px 0px;
+}
+
+.conteudo {
+    /* Criamos esssa classe para poder
+    dar espaçamento entre os conteudos 
+    principais e os laterais, esse metodo
+    poderia ser substituido por um pading ou
+    um margin diretamente nos ids acima, porem
+    dessa forma é mais facil. Criando uma outra 
+    area dentro das areas principais, e dentro dessa
+    area que criamos iremos inserir o conteudo de fato.*/
+    margin: 0 auto;
+    /* Para centralizar*/
+    width: 90%;
+    /* Deixamos 10% de espaçamento sobrando para
+    ser o espaçamento central entre os dois lados.*/
+    
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #fff url(../Assets/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
+
+
+/************  Formtações de textos ***************/
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1em ;
+    margin-bottom: 10px;
+}
+
+
+/************** Formatação de listas lateral **************/
+#listaBeneficios li {
+    border-bottom: 1px solid #f3efcb;
+    padding: 8px 8px;
+    margin:0 20px;
+    height: 6em;
+}
+
+#listaBeneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#listaBeneficios li a h3 {
+    font-size: 1em;
+    font-weight: 900;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../Assets/ornamento.png) right center no-repeat;
+}
+
+#listaBeneficios li a p{
+    font-size: 0.8em;
+    color: black;
+}
+
+#listaBeneficios li:hover {
+    background-color: #ede9cc;
+    cursor: pointer;
 }
