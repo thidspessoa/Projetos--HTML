@@ -208,6 +208,15 @@ ul#Navegacao {
     color: #7d7640;
 }
 
+/********************* Formatação de colunas *******************/
+
+#umaColuna #container {
+    background: none;
+    background-position: right;
+}
+
+
+
 
 /************  Formtações de textos ***************/
 
@@ -253,4 +262,6 @@ p {
     background-color: #ede9cc;
     cursor: pointer;
 }
+
+
 
